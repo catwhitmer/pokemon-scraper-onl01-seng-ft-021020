@@ -14,10 +14,10 @@ class Pokemon
 
   
   def self.find(id,db)
-    db.execute("SELECT * FROM pokemon WHERE id = ?")
+    sql= ("SELECT * FROM pokemon WHERE id = ?")
  
-    pokemon = DB[:conn].execute(id, db)
-    pokemon_new = Pokemon.new(pokemon)
+    pokemon = DB[:conn].execute(sql, id, db)
+    pokemon_new = Pokemon.new(id, db)
     pokemon_new
     end
 end
