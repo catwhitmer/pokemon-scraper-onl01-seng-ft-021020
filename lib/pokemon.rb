@@ -13,7 +13,7 @@ class Pokemon
   end
 
   
-  def self.find_by_name(name)
+  def self.find(id,db)
     sql = <<-SQL
       SELECT *
       FROM students
