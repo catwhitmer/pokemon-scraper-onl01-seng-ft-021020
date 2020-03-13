@@ -19,5 +19,4 @@ class Pokemon
     pokemon = DB[:conn].execute(id, db)
     pokemon
     end
-  end
 end
