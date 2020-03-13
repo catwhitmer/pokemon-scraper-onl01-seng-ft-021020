@@ -17,6 +17,7 @@ class Pokemon
     db.execute("SELECT * FROM pokemon WHERE id = ?")
  
     pokemon = DB[:conn].execute(id, db)
-    pokemon
+    pokemon_new = Pokemon.new(pokemon)
+    pokemon_new
     end
 end
