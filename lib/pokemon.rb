@@ -17,7 +17,7 @@ class Pokemon
     db.execute("SELECT * FROM students WHERE id = ?")
  
     pokemon = DB[:conn].execute(id, db)
-      
+    pokemon
     end
   end
 end
