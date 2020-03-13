@@ -14,7 +14,7 @@ class Pokemon
 
   
   def self.find(id,db)
-    db.execute("SELECT * FROM students WHERE id = ?")
+    db.execute("SELECT * FROM pokemon WHERE id = ?")
  
     pokemon = DB[:conn].execute(id, db)
     pokemon
