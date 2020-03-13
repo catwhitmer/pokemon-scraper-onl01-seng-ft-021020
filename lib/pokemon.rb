@@ -17,7 +17,7 @@ class Pokemon
     db.execute("SELECT * FROM students WHERE id = ?")
  
     DB[:conn].execute(id, db).map do |row|
-      self.new_from_db(row)
-    end.first
+      
+    end
   end
 end
